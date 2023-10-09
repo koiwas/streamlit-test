@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    streamlit:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: sample_quiz-app
+        ports:
+            - "8501:8501"
